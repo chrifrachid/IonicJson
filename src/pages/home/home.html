@@ -1,0 +1,83 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Food
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards">
+<!-- Galway Card-->
+
+<!-- loop to go through all items in .json file-->
+<ion-item *ngFor="let item of items">
+  <ion-card>
+    <div>
+       <img src="{{ item.imgPath }}">
+    </div>
+
+    <ion-card-content>
+
+      <ion-card-title>
+        {{item.title}}
+      </ion-card-title>
+    </ion-card-content>
+
+    <ion-row no-padding>
+
+  <!-- view button-->
+      <ion-col text-left>
+        <!--on click, go to DetailsPage on item-->
+        <button ion-button (click)="goToDetails()" clear small color="danger" icon-left>
+          <ion-icon name='exit'></ion-icon>
+          View
+        </button>
+      </ion-col>
+
+    <!-- review buttoon-->
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-right>
+          <ion-icon name='chatboxes'></ion-icon>
+          Review
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  </ion-item>
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item *ngFor="let item of items">
+        <ion-avatar item-left>
+          <img src="{{ item.imgpath }}">
+        </ion-avatar>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+    </ion-item>
+
+  </ion-list>
+</ion-content>-->

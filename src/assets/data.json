@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "title": "Pizza",
+    "description": "Lorem ipsum dolor sit amet",
+    "imgPath": "assets/img/pizza.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Burger",
+    "description": "Lorem ipsum dolor sit amet",
+    "imgPath": "assets/img/burger.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Lasagne",
+    "description": "Lorem ipsum dolor sit amet",
+    "imgPath": "assets/img/lasagna.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Pasta",
+    "description": "Lorem ipsum dolor sit amet",
+    "imgPath": "assets/img/pasta.jpg"
+  }
+]
